@@ -49,7 +49,7 @@ async function searchPlaces({ city, guests }) {
 }
 
 // 🔴 Huvud-endpoint som Framer kallar
-app.post("/api/search-weddings", async (req, res) => {
+app.post("/api/chat-wedding", async (req, res) => {
   try {
     const { prompt } = req.body;
     if (!prompt) {
